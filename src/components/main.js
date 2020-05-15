@@ -5,7 +5,7 @@ import AudioIntro from "../sound/intro.wav"
 
 export default () => {
   const data = useStaticQuery(graphql`
-    query MyQuery {
+    query Book {
       file(relativePath: { eq: "intro.jpg" }) {
         childImageSharp {
           # Specify the image processing specifications right in the query.

@@ -1,14 +1,12 @@
 import React from "react"
-import Header from "../components/header"
-import Main from "../components/main"
-import Footer from "../components/footer"
+import Layout from "../components/layout"
+import Book from "../components/book"
 
 import "../style.css"
 
 export default () => (
-  <>
-    <Header />
-    <Main />
-    <Footer />
-  </>
+  <Layout>
+    <h1>Книги</h1>
+    <Book />
+  </Layout>
 )
