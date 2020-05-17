@@ -2,10 +2,11 @@ import React from "react"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 import AudioIntro from "../sound/intro.wav"
+import Slider from "./slider"
 
 export default () => {
   const data = useStaticQuery(graphql`
-    query Book {
+    query Intro {
       file(relativePath: { eq: "intro.jpg" }) {
         childImageSharp {
           # Specify the image processing specifications right in the query.
@@ -20,6 +21,7 @@ export default () => {
   return (
     <main>
       <Img fluid={data.file.childImageSharp.fluid} alt="Интро" />
+      {/* <Slider /> */}
       <div className="trapeze"></div>
       <audio controls>
         <source src={AudioIntro} type="audio/wav" />

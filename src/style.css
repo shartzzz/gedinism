@@ -7,6 +7,18 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+@media (min-width: 768px) and (max-width: 5000px) and (orientation: landscape) {
+    #gatsby-focus-wrapper {
+        width: 800px;
+        margin: auto;
+    }
+   .textLeft {
+       position: absolute;
+    width:1em; line-height:1em; font-size:76px; 
+    visibility: visible;
+   } 
+  }
+
 h1 {
   text-transform: uppercase;
   font-style: normal;
@@ -39,9 +51,9 @@ footer {
 nav {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+  grid-gap: 10px;
   place-content: center center;
-  margin: 0 5px 0 5px;
+  margin: 0 10px 0 10px;
 }
 
 nav a {
@@ -53,9 +65,19 @@ nav a {
   height: 100%;
 }
 
+.textLeft {
+    display: none;
+}
+
+.litres {
+    bottom: 0;
+}
+
 .wrapper {
     position: relative;
+    margin: auto;
     height: 100vh;
+    max-width: 600px;
     display: grid;
 	grid-template-rows: 75px 1fr 55px;
   }
@@ -89,4 +111,41 @@ nav a {
 
 .audio {
     place-content: center center;
+}
+
+.slider {
+    position: relative;
+    display: flex;
+    margin: 0;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.slide {
+    position: relative;
+    margin: auto;
+    min-width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+
+#goLeft {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 15%;
+    height: 100%;
+    background: none;
+}
+
+#goRight {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 15%;
+    height: 100%;
+    background: none;
 }
