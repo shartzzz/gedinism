@@ -10,7 +10,7 @@ const ListLink = props => (
 
 export default () => {
   const data = useStaticQuery(graphql`
-    query In {
+    query Intro {
       file(relativePath: { eq: "intro.jpg" }) {
         childImageSharp {
           # Specify the image processing specifications right in the query.
