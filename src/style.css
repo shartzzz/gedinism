@@ -22,56 +22,41 @@ h1 {
 }
 
 main {
-    position: relative;
+  position: relative;
   display: grid;
   grid-template-rows: 75% 13% 12%;
   margin-top: 10px;
 }
 
 main div {
-    position: relative;
+  position: relative;
 }
 
-main i {
-    position: relative;
-    top: 50%;
-    width: 100px;
+.lArr img {
+  height: 100%;
+  width: 100%;
 }
+
+.rArr img {
+    height: 100%;
+    width: 100%;
+  }
 
 .lArr {
-    position: absolute;
-    text-decoration: none;
-    left: 10px;
-    background: grey;
-    height: 100%;
-    width: 10%;
+  position: absolute;
+  text-decoration: none;
+  left: 10px;
+  height: 100%;
+  width: 10%;
 }
 
 .rArr {
-    position: absolute;
-    text-decoration: none;
-    right: 10px;
-    background: grey;
-    height: 100%;
-    width: 10%;
+  position: absolute;
+  text-decoration: none;
+  right: 10px;
+  height: 100%;
+  width: 10%;
 }
-
-/* main::before {
-    position: absolute;
-content: '\2190';
-left: 10px;
-top: 20%;
-background: gray;
-height: 250px;
-padding: 20px 20px 20px 0px;
-}
-
-main::after {
-    position: absolute;
-    content: '\2192';
-    top: 40%;
-    right: 10px;
-    } */
 
 audio {
   display: block;
@@ -131,22 +116,25 @@ nav a:active {
 }
 
 .about {
-  grid-template-rows: 100px 300px 50px;
+  grid-template-rows: 80px 250px 50px;
   margin: 0 30px 0 30px;
+  grid-gap: 20px;
   font-size: 20px;
+  margin-top: 20px;
 }
 
 .about p {
   max-height: 250px;
+  margin: 0;
 }
 
 .about div {
-    place-self: center center;
-  }
-
-.activeLink {
-  text-decoration: underline;
+  place-self: center center;
 }
+
+/* .activeLink {
+  text-decoration: underline;
+} */
 
 .gatsby-image-wrapper {
   margin: auto;
@@ -157,19 +145,8 @@ nav a:active {
 .trapeze {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   color: black;
-}
-
-.trapeze a:nth-child(1n) {
-    grid-area: 1 / 1 / 2 / 2;
-	place-self: center center;
-}
-
-.trapeze a:nth-child(2n) {
-    grid-area: 1 / 2 / 2 / 3;
-	place-self: center center;
 }
 
 .textBook {
@@ -180,43 +157,6 @@ nav a:active {
 
 .audio {
   place-content: center center;
-}
-
-.slider {
-  position: relative;
-  display: flex;
-  margin: 0;
-  box-sizing: border-box;
-  align-items: center;
-}
-
-.slide {
-  position: relative;
-  margin: auto;
-  min-width: 100%;
-  height: 100%;
-  border: 1px solid black;
-  transition: 0.5s;
-}
-
-#goLeft {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  width: 15%;
-  height: 100%;
-  background: none;
-}
-
-#goRight {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  width: 15%;
-  height: 100%;
-  background: none;
 }
 
 @media (min-width: 768px) and (max-width: 5000px) and (orientation: landscape) {

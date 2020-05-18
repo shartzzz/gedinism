@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import Book from "../components/book"
+import Book from "./book/intro"
 
 import "../style.css"
 

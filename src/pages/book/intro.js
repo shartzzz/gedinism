@@ -2,7 +2,8 @@ import React from "react"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql, Link } from "gatsby"
 
-import AudioIntro from "../sound/intro.wav"
+import Rarr from "../../img/rArr.svg"
+import AudioIntro from "../../sound/intro.wav"
 
 const ListLink = props => (
   <Link className={props.className} to={props.to}>{props.children}</Link>
@@ -10,7 +11,7 @@ const ListLink = props => (
 
 export default () => {
   const data = useStaticQuery(graphql`
-    query In {
+    query intro {
       file(relativePath: { eq: "intro.jpg" }) {
         childImageSharp {
           # Specify the image processing specifications right in the query.
@@ -25,8 +26,7 @@ export default () => {
   return (
     <main>
       <div>
-      <ListLink className='lArr' to="/"><i>&larr;</i></ListLink>
-      <ListLink className='rArr' to="/"><i>&rarr;</i></ListLink>
+      <ListLink className='rArr' to="/book/baun"><img src={Rarr}></img></ListLink>
       <Img fluid={data.file.childImageSharp.fluid} alt="Интро" />
       </div>
       <div className="trapeze">

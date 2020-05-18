@@ -1,9 +1,9 @@
 import React from "react"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import Book from "../book"
+import Book from "../../pages/book/intro"
 
-import AudioIntro from "../sound/intro.wav"
+import AudioIntro from "../../sound/intro.wav"
 
 const ListLink = props => (
   <Link className={props.className} to={props.to}>{props.children}</Link>
@@ -24,7 +24,7 @@ export default () => {
   `)
 
   return (
-    <Book>
+    <>
       <div>
       <ListLink className='lArr' to="/"><i>&larr;</i></ListLink>
       <ListLink className='rArr' to="/"><i>&rarr;</i></ListLink>
@@ -40,6 +40,6 @@ export default () => {
           <a href={AudioIntro}>ссылка на аудио</a>
         </p>
       </audio>
-    </Book>
+    </>
   )
 }
