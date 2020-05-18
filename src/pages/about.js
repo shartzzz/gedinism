@@ -32,7 +32,7 @@ export default () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={VK} alt="Телеграм" height="45px" />
+            <img src={VK} alt="Вконтакте" height="45px" />
           </a>
         </div>
       </main>

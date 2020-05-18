@@ -18,7 +18,7 @@ export default () => {
       file(relativePath: { eq: "autro.jpg" }) {
         childImageSharp {
           # Specify the image processing specifications right in the query.
-          fluid(maxWidth: 1751, maxHeight: 2485) {
+          fluid {
             ...GatsbyImageSharpFluid
           }
         }
@@ -32,7 +32,7 @@ export default () => {
       <main>
         <div>
           <ListLink className="lArr" to="/book/baun">
-            <img src={Larr}></img>
+            <img src={Larr} alt="Баюн"></img>
           </ListLink>
           <Img fluid={data.file.childImageSharp.fluid} alt="Интро" />
         </div>

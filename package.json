@@ -1,12 +1,12 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "gedonism",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Во время беззакония и безбожия можно процветать только в культуре обращенной к своим внутренним ценностям. Гедонизм, как удовольствие от жизни. Гедонизм, как процветание морали и нравственности.",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -16,9 +16,12 @@
   "dependencies": {
     "gatsby": "^2.21.22",
     "gatsby-image": "^2.4.3",
+    "gatsby-plugin-manifest": "^2.4.5",
+    "gatsby-plugin-offline": "^3.2.3",
     "gatsby-plugin-sharp": "^2.6.3",
     "gatsby-source-filesystem": "^2.3.3",
     "gatsby-transformer-sharp": "^2.5.2",
+    "gh-pages": "^2.2.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },

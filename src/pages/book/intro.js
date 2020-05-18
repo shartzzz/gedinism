@@ -26,7 +26,7 @@ export default () => {
   return (
     <main>
       <div>
-      <ListLink className='rArr' to="/book/baun"><img src={Rarr}></img></ListLink>
+      <ListLink className='rArr' to="/book/baun"><img src={Rarr} alt="Баюн"></img></ListLink>
       <Img fluid={data.file.childImageSharp.fluid} alt="Интро" />
       </div>
       <div className="trapeze">
