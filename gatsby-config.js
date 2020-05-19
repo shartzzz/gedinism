@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Культура гедонизма`,
-    description: `культура гедонизма интро баюн аутро`,
+    description: `культура гедонизма сонное царство интро баюн аутро`,
     author: `shartzzz`,
   },
   pathPrefix: "/gedonism",

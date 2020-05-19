@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Arial:300,400,500,700&subset=cyrillic");
 
 * {
   box-sizing: border-box;
@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 h1 {
@@ -169,6 +169,7 @@ nav a:active {
   }
 
   .textLeft {
+    text-transform: uppercase;
     position: absolute;
     width: 42px;
     line-height: 1em;
@@ -176,6 +177,7 @@ nav a:active {
     left: -90px;
   }
   .textRight {
+    text-transform: uppercase;
     position: absolute;
     width: 42px;
     line-height: 1em;
